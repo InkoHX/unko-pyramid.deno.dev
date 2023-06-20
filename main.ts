@@ -11,6 +11,8 @@ serve((request) => {
 
         controller.enqueue(" ".repeat(space) + "💩".repeat(poop) + "\n");
       }
+
+      controller.close()
     },
   });
 
