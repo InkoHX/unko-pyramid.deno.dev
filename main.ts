@@ -1,6 +1,4 @@
-import { serve } from "https://deno.land/std@0.192.0/http/mod.ts";
-
-serve((request) => {
+Deno.serve((request) => {
   const line =
     Number.parseInt(new URL(request.url).searchParams.get("line")!) || 5;
   const body = new ReadableStream<string>({
